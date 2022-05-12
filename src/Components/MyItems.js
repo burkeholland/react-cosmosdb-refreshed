@@ -1,4 +1,3 @@
-import { Items } from "@azure/cosmos";
 import React, { useEffect, useState } from "react";
 
 const MyItems = ({ items, setItems }) => {
@@ -26,10 +25,12 @@ const MyItems = ({ items, setItems }) => {
       },
     });
 
-    let arr = [...items];
-    arr[index] = itemToUpdate;
-
-    setItems(arr);
+    // To get the state to update, we can pass a function to the setItems
+    // method and the first param will be the change state. We just need to return that
+    // as a new array.
+    setItems((updatedState) => {
+      return [...updatedState];
+    });
   }
 
   async function deleteItem(id, category, index) {

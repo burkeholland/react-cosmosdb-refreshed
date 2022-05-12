@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-const CreateItem = ({ items, setItems }) => {
+const CreateItem = ({ setItems }) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("home");
@@ -15,9 +15,11 @@ const CreateItem = ({ items, setItems }) => {
     });
     let createdItem = await result.json();
 
-    let arr = [...items, createdItem];
-    setItems(arr);
+    setItems((prevState) => {
+      return [...prevState, createdItem];
+    });
 
+    // Clear out the form
     setName("");
     setDescription("");
     setCategory("home");
@@ -25,7 +27,6 @@ const CreateItem = ({ items, setItems }) => {
 
   return (
     <div>
-      <h1 className="is-size-2">New Task</h1>
       <div className="field">
         <label htmlFor="">Name</label>
         <div className="control">

@@ -30,7 +30,7 @@ const tasksService = {
   },
   update(id, updatedItem) {
     let itemToReplace = container.item(id, updatedItem.category);
-    let { result } = itemToReplace.replace(updatedItem);
+    let { result } = await itemToReplace.replace(updatedItem);
 
     return result;
   },

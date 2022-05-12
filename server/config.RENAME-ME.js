@@ -2,8 +2,8 @@
 // This file is NOT checked into source control
 
 const config = {
-  endpoint: "https://heroes-sql.documents.azure.com:443/",
-  key: "ESwVd3GwJYndiiBvcg3sMhntwtw51UxVMKAja0nVfXzzfLimdRXGTdTVROt3kiM5ccIoMDYydjjh2bSRaaNJwQ==",
+  endpoint: "<your-cosmosdb-uri",
+  key: "<your-cosmos-db-key>",
   databaseId: "Tasks",
   containerId: "Items",
   partitionKey: { kind: "Hash", paths: ["/category"] },
