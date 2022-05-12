@@ -1,10 +1,6 @@
-# Express React Starter
+# React Cosmos DB Refreshed
 
-This is a template for using Express and React in the same project. It is based on Create React App.
-
-Read the article: [Introducing Express React Starter](https://medium.com/burke-knows-words/introducing-express-react-starter-b6d299206a3a)
-
-OR...
+A refreshed example of running React and Cosmos DB together. Uses Express and React in the same project based on the Express React Starter Kit. Read the article: [Introducing Express React Starter](https://medium.com/burke-knows-words/introducing-express-react-starter-b6d299206a3a)
 
 ## Prerequisites
 
