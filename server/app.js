@@ -36,7 +36,7 @@ app.set("view engine", "jade");
 
 app.use("/api", index);
 app.get("*", (req, res) => {
-  res.sendFile("build/index.html", { root: global });
+  res.sendFile("client/index.html", { root: global });
 });
 
 // catch 404 and forward to error handler

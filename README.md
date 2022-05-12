@@ -36,10 +36,14 @@ All AJAX/fetch requests to `/api` are sent back to the Express server which is s
 
 In production, you want Express to serve up your app.
 
-### Build React App
-
 ```bash
 npm build
+```
+
+This will build the entire app into the "build" folder. This is the folder that you would deploy to your server. The entrypoint is `server.js`. You can test the production build locally by running...
+
+```bash
+node build/server.js
 ```
 
 Now simply visit the Express app at 'http://localhost:3001' and you will see your app served from the 'build' folder. That's all there is to it!

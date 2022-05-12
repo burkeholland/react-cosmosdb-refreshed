@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
-    "build": "react-scripts build && node copy.js",
+    "build": "BUILD_PATH='./build/client' react-scripts build && node copy.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
