@@ -28,7 +28,7 @@ const tasksService = {
 
     return resources;
   },
-  update(id, updatedItem) {
+  async update(id, updatedItem) {
     let itemToReplace = container.item(id, updatedItem.category);
     let { result } = await itemToReplace.replace(updatedItem);
 
