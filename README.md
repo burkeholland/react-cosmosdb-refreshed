@@ -1,6 +1,6 @@
 # React Cosmos DB Refreshed
 
-A refreshed example of running React and Cosmos DB together. Uses Express and React in the same project based on the Express React Starter Kit. Read the article: [Introducing Express React Starter](https://medium.com/burke-knows-words/introducing-express-react-starter-b6d299206a3a)
+A refreshed example of running React and Cosmos DB together. Uses Express and React in the same project based on the Express React Starter Kit. Read the article: [Introducing Express React Starter](https://burkeholland.github.io/posts/express-react-starter-refresh/)
 
 ## Prerequisites
 
