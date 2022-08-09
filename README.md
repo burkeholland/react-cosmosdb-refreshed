@@ -22,6 +22,7 @@ The template can be run in development, or in production. For development, use t
 
 ```bash
 npm start
+npm run server
 ```
 
 ![Imgur](http://i.imgur.com/m6wz8eQ.png)
@@ -46,4 +47,4 @@ This will build the entire app into the "build" folder. This is the folder that 
 node build/server.js
 ```
 
-Now simply visit the Express app at 'http://localhost:3001' and you will see your app served from the 'build' folder. That's all there is to it!
+Now simply visit the Express app at 'http://localhost:3000' and you will see your app served from the 'build' folder. That's all there is to it!

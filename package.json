@@ -21,12 +21,13 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"nodemon server/server.js\"",
-    "build": "BUILD_PATH='./build/client' react-scripts build && node copy.js",
+    "start": "PORT=3001 react-scripts start",
+    "server": "nodemon server/bin/www",
+    "build": "react-scripts build && node copy.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3000",
   "browserslist": {
     "production": [
       ">0.2%",
